@@ -1,0 +1,1 @@
+"use strict";var num=10,y=18,fun=function(){console.log("hello")};

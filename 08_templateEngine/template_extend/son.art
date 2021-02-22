@@ -1,0 +1,10 @@
+
+{{extend './father.art'}}
+
+{{block 'head'}}
+<p> {{msg}} </p>
+{{/block}}
+
+{{block 'body'}}
+<p> lsdjfjsj sfs lfj lsjfsj l  </p>
+{{/block}}

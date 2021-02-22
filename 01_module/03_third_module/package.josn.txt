@@ -1,0 +1,26 @@
+作用：
+	项目的描述文件，记录了当前项目信息，例如项目名称，版本，作者，GitHub地址，当前项目依赖了哪些第三方模块等。
+	可以使用npm init -y命令生成.json文件！（默认的json文件）
+===> 往后下载模块时，就会将模块信息添加到.json文件中！
+
+
+
+项目依赖：（dependencies）
+	在项目的开发阶段和线上运营阶段，都要依赖的第三方包，称为项目依赖。
+	在使用【npm install 包名】命令下载的文件会默认被添加到package.json文件的dependencies字段中。
+
+
+开发依赖：（devDependencies）
+	在项目的开发阶段需要依赖，线上运营阶段不需要依赖的第三方包，称为开发依赖。
+	在使用【npm install 包名 --save-dev】 命令将包添加到package.json文件的devDependencies字段中。
+
+--production: =>	下载项目依赖，dependencies
+--save-dev： => 	下载开发依赖，devDependencies
+npm install: => 	下载全部依赖
+
+
+package-lock.json:记录模块与模块之间的依赖关系！
+
+
+
+

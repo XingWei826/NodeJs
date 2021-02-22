@@ -1,0 +1,23 @@
+<ul>    
+    {{each Array}}
+        <li>
+            {{$value.name}}
+            {{$value.age}}
+            {{$value.sex}}
+        </li>    
+    {{/each}}
+
+</ul>
+
+/////////////////
+<ul>
+    <%
+        for(var i = 0;i <Array.length;i++) { %>
+                <li>
+                    <%=Array[i].name %>
+                    <%=Array[i].age %>
+                    <%=Array[i].sex %>
+                </li>
+       <% } 
+    %>
+</ul>

@@ -1,0 +1,20 @@
+PS D:\Users\XingWei\Desktop\Node.JS\04_staticRes> npm install mime
+
+【【【npm WARN npm npm does not support Node.js v14.9.0】】】
+
+npm WARN npm You should probably upgrade to a newer version of node as we
+npm WARN npm can't make any promises that npm will work with this version.
+npm WARN npm Supported releases of Node.js are the latest release of 4, 6, 7, 8, 9.
+npm WARN npm You can find the latest version at https://nodejs.org/
+
+【【【npm ERR!】】】cb.apply is not a function
+【【【npm ERR!】】】 A complete log of this run can be found in:
+【【【npm ERR!】】】     C:\Users\XingWei\AppData\Roaming\npm-cache\_logs\2021-01-27T15_11_13_228Z-debug.log
+
+安装mime模块时报错！
+1.首先需要cmd 命令窗口 查看node,npm版本,分别使用 node -v，npm-v 查看版本；
+2.在百度搜索node.js以往版本对照，网址如下node版本对照 (https://nodejs.org/zh-cn/download/releases/)然后根据自己的node版本来更新npm 版本；
+    npm -g install npm@6.14.8
+如果仍然报错，依旧显示npm不支持这个版本 ，这说明npm存在旧的npm缓存，还是旧的npm 环境
+此时需要到C:\Users\XingWei\AppData\Roaming 根目录下删除npm， npm-cache两个文件！
+===》》》 重新npm install mime => 成功！
