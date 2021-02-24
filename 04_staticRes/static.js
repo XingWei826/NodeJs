@@ -15,7 +15,7 @@ server.on('request',(req,res)=> {
     let type =  mime.getType(realpath); //获取资源的类型
     //读取文件，返回给用户
     fs.readFile(realpath,(error,result)=> {
-        if(error != null) {
+        if(error) {
             res.writeHead(404, {
                 'context-type': 'text/html;charset=utf8'    
             })

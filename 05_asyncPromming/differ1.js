@@ -38,6 +38,8 @@ get(function(num) {
 // }
 // callback('123');
 
+
+
 //
 function getMsg1(callback) {
     setTimeout(function() {

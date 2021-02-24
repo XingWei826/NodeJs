@@ -1,5 +1,5 @@
 const http = require('http');            //获取网站服务器模块
-const app = http.createServer();        //创建服务器对象
+const app = http.createServer();        //创建服务器对象（返回http.Server实例）
 const url = require('url');             //处理URL地址
 app.on('request', (req, res) => {
     // res.writeHead(400);                  //状态(400,500,,,)
@@ -9,7 +9,6 @@ app.on('request', (req, res) => {
     // } else if (req.method == 'GET') {
     //     res.end('get');
     // }
-
 
     //4.
     res.writeHead(200, {
